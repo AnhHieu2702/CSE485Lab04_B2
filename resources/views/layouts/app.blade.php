@@ -17,17 +17,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Quản lý khách hàng</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('customers.index') }}">Quản lý khách hàng</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Quản lý sản phẩm</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('products.index') }}">Quản lý sản phẩm</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ route('orders.index') }}">Quản lý hàng chờ</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Quản lý đơn hàng</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('order_details.index') }}">Quản lý đơn hàng</a>
                     </li>
                 </ul>
             </div>
