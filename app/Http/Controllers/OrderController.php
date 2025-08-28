@@ -12,7 +12,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $orders = Order::with('customer')->get(); // Lấy đơn hàng kèm thông tin khách hàng
+        $orders = Order::with('customer')->paginate(5); // Lấy đơn hàng kèm thông tin khách hàng
         return view('orders.index', compact('orders'));
     }
 

@@ -42,5 +42,13 @@
             @endforeach
         </tbody>
     </table>
+
+    <div class="d-flex justify-content-center">
+        <nav aria-label="Pagination">
+            <ul class="pagination">
+                {{ $products->onEachSide(1)->links('pagination::bootstrap-4') }}
+            </ul>
+        </nav>
+    </div>
 </div>
 @endsection
